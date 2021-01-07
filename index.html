@@ -1,56 +1,249 @@
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/main.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Equipo de profes</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!--Fontawesome css-->
+    <!-- <link rel="stylesheet" href="./assets/css/all.css" /> -->
+    <script src="https://kit.fontawesome.com/f2e0e49a34.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="./style/reset.css" /> -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Profes @ Adalab</title>
   </head>
+
   <body>
+    <!-- Header -->
     <header class="header">
-      <h1 class="header__title">Equipo de profes</h1>
-      <nav>Equipo Quiénes somos Contacto</nav>
+      <div class="headingTop">
+        <h1 class="nameTeam pageContainer">LosProfes</h1>
+      </div>
+      <div class="menu">
+        <nav class="pageContainer">
+          <ul class="menuOptions">
+            <li>
+              <a class="linkMenu" href="#equipoTitle">Equipo</a>
+            </li>
+            <li>
+              <a class="linkMenu" href="#quienesSomos">Quiénes somos</a>
+            </li>
+            <li>
+              <a class="linkMenu" href="">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <section class="hero">
-      <img src="https://placekitten.com/g/768/421" alt="Foto del equipo" />
-      <h2 class="motto">Programando ando</h2>
-    </section>
-    <section class="aboutus">
-      <h3 class="aboutus_title"></h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta explicabo
-        laboriosam iure eos totam pariatur ullam vitae. Esse ipsa harum illo
-        distinctio iure ipsam, tempore, repellat perferendis quod omnis fugiat.
-      </p>
-    </section>
-    <section class="strengthsweaknesses">
-      <article class="strengths">
-        <h3 class="strengths_title">Fortalezas</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex omnis quia
-          incidunt fuga mollitia perspiciatis debitis reprehenderit asperiores
-          ullam inventore, doloribus praesentium aut soluta tempora, quae
-          dolorum nulla vel animi.
-        </p>
-      </article>
-      <article class="weaknesses">
-        <h3 class="weaknesses__title">Debilidades</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus velit
-          labore repudiandae dolores unde enim consequatur eos illo non,
-          praesentium similique omnis aliquid quas nisi culpa. Officia odio
-          commodi doloribus?
-        </p>
-      </article>
-    </section>
-    <section class="adalabers">
-      <article class="dayana">
-        <i class="fa fa-facebook-square" aria-hidden="true"></i> • 
-        <i class="fa fa-archive-org" aria-hidden="true"></i>
-      </article>
-    </section>
+    <main>
+      <!-- hero -->
+      <section class="hero heroImage">
+        <div class="pageContainer">
+          <h2 class="claim">
+            Dando clase con ilusión y ganas porque nos encanta programar
+          </h2>
+        </div>
+      </section>
+
+      <!--  TEAM and description-->
+      <span id="equipoTitle" class="teamTitle"></span>
+      <section class="mainContainer">
+        <div class="teamContainer pageContainer">
+          <article>
+            <h2 class="team">Equipo</h2>
+            <p class="teamText">
+              Somos un equipo de profes muy enfocado a enseñar a Adalabers para que sean super-developers
+            </p>
+            <p class="teamText">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta dignissimos, temporibus vitae, dicta distinctio porro molestiae ratione adipisci veniam fugit, repellat aliquid at hic consectetur minima excepturi rem eius recusandae.<br />
+              Somos super-profes!
+            </p>
+          </article>
+        </div>
+
+        <div class="strengthsContainer">
+          <div class="strengthsWeaknesses pageContainer">
+            <div class="square"></div>
+
+            <article class="strengths one">
+              <h2 class="strengthsTitle">Fortalezas</h2>
+              <p class="strengthsText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dignissimos dolores rem sapiente, vel quaerat blanditiis modi quia eius, incidunt obcaecati. Id laboriosam nihil, magni nisi suscipit quibusdam minus cupiditate.
+              </p>
+            </article>
+
+            <article class="strengths two">
+              <h2 class="strengthsTitle">Áreas en desarrollo</h2>
+              <p class="strengthsText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, rem ducimus distinctio iste, iure nihil voluptas omnis eaque nostrum reiciendis fugit veritatis dignissimos neque ea vel sint maiores impedit odit.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- adalabers / quienes somos -->
+      <section class="quienesSomos">
+        <span id="quienesSomos" class="teamTitle"></span>
+        <h2 class="quienesSomosTitle">Quiénes somos</h2>
+        <div class="pageContainer">
+          <article class="adalaber alignLeft">
+            <figure class="picWrapper">
+              <img
+                class="pic"
+                src="./assets/images/marcjanna180x180.jpg"
+                alt="Marcjanna Stopińska"
+              />
+              <img
+                class="bigPic"
+                src="./assets/images/marcjanna300x300ok.jpg"
+                alt="Marcjanna Stopińska"
+              />
+            </figure>
+            <div class="adalaberData">
+              <h3 class="adalaberName">Miguel del Mazo</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa blanditiis dolore, voluptatibus nemo quisquam eius deleniti placeat? Provident illo nisi repellat. Facilis perferendis error a, voluptas in autem alias ullam!
+              </p>
+              <ul>
+                <li class="rrssAdalaber">
+                  <a href="https://twitter.com/miguel" target="_blank"
+                    ><i class="fab fa-twitter rrss"></i></a
+                  >·
+                </li>
+                <li class="rrssAdalaber">
+                  <a
+                    href="http://www.linkedin.com/in/miguel"
+                    target="_blank"
+                    ><i class="fab fa-linkedin-in rrss"></i></a
+                  >·
+                </li>
+                <li class="rrssAdalaber">
+                  <a href="https://github.com/miguel" target="_blank"
+                    ><i class="fab fa-github-alt rrss"></i></a
+                  >·
+                </li>
+                <li class="rrssAdalaber">
+                  <a href="mailto:miguel@adalab.es" target="_blank"
+                    ><i class="fas fa-envelope rrss"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="adalaber alignRight">
+            <figure class="picWrapper">
+              <img
+                class="pic"
+                src="./assets/images/ana_bescos180x180.jpg"
+                alt="Ana Bescós"
+              />
+              <img
+                class="bigPic"
+                src="./assets/images/ana_bescos300x300.jpg"
+                alt="Ana Bescós"
+              />
+            </figure>
+            <div class="adalaberData">
+              <h3 class="adalaberName">Dayana Romero</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam vel, cupiditate perferendis magnam earum aliquam id eaque perspiciatis saepe, repellendus quis quidem animi, molestias fugit reprehenderit! Rem sequi non culpa.
+              </p>
+              <ul>
+                <li class="rrssAdalaber">
+                  <a href="https://twitter.com/dayana" target="_blank"
+                    ><i class="fab fa-twitter rrss"></i></a
+                  >·
+                </li>
+                <li class="rrssAdalaber">
+                  <a
+                    href="https://www.linkedin.com/in/dayana/"
+                    target="_blank"
+                    ><i class="fab fa-linkedin-in rrss"></i></a
+                  >·
+                </li>
+                <li class="rrssAdalaber">
+                  <a href="https://github.com/dayana" target="_blank"
+                    ><i class="fab fa-github-alt rrss"></i></a
+                  >·
+                </li>
+                <li class="rrssAdalaber">
+                  <a href="mailto:dayana@adalab.es" target="_blank"
+                    ><i class="fas fa-envelope rrss"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="adalaber alignLeft">
+            <figure class="picWrapper">
+              <img
+                class="pic"
+                src="./assets/images/sagra_mielgo180x180.jpg"
+                alt="Sagra Mielgo"
+              />
+              <img
+                class="bigPic"
+                src="./assets/images/sagra_mielgo300x300.jpg"
+                alt="Sagra Mielgo"
+              />
+            </figure>
+            <div class="adalaberData">
+              <h3 class="adalaberName">Iván Garrido</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam alias totam hic quos, odio ipsum recusandae saepe tenetur soluta molestiae autem illo et officiis voluptatum debitis enim porro dolor aspernatur?
+              </p>
+              <ul>
+                <li class="rrssAdalaber">
+                  <a href="https://twitter.com/ivan" target="_blank"
+                    ><i class="fab fa-twitter rrss"></i></a
+                  >·
+                </li>
+                <li class="rrssAdalaber">
+                  <a
+                    href="https://www.linkedin.com/in/ivan"
+                    target="_blank"
+                    ><i class="fab fa-linkedin-in rrss"></i></a
+                  >·
+                </li>
+                <li class="rrssAdalaber">
+                  <a href="https://github.com/ivan" target="_blank"
+                    ><i class="fab fa-github-alt rrss"></i></a
+                  >·
+                </li>
+                <li class="rrssAdalaber">
+                  <a href="mailto:ivan@adalab.es" target="_blank"
+                    ><i class="fas fa-envelope rrss"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="pageContainer footerWrap">
+        <p class="copyright footerFont">LosProfes © 2021</p>
+        <nav class="footerMenu footerFont">
+          <ul>
+            <li><a class="navLink" href="#equipoTitle">Equipo</a></li>
+            <li><a class="navLink" href="#quienesSomos">Quiénes somos</a></li>
+            <li><a class="navLink" href="#">Contacto</a></li>
+          </ul>
+        </nav>
+        <figure class="containerLogo">
+          <img
+            class="logoFooter"
+            src="./assets/images/adalab-logo.png"
+            alt="logo Adalab"
+          />
+        </figure>
+      </div>
+    </footer>
   </body>
 </html>
